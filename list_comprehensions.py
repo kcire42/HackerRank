@@ -1,24 +1,19 @@
 def main():
-    x = int(input("Ingrese un numero x: "))
-    y = int(input("Ingrese un numero y: "))
-    z = int(input("Ingrese un numero z: "))
-    n = int(input("Ingrese un numero n: "))
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
 
-    if x > y and x > z:
-        mayor = x+1
-    elif y > x and y > z:
-        mayor = y+1
-    elif z > x and z > y: 
-        mayor =z+1
+    #listas = []
+    listas = [[a,b,c] for a in range(0,x+1) for b in range(0,y+1) for c in range(0,z+1)  if a + b + c != n ]
+    # for i in range(x+1):
+    #     for j in range(y+1):
+    #         for k in range (z+1):
+    #             for w in range(n+1):
+    #                 listas.append([i,j,k,n])
 
-    lista = []
-    
-    for i in range (mayor):
-        lista.append([i])
-        for j in range(mayor):
-            lista[i].append(j)
 
-    print(lista)
+    print(listas)
 
 
     
