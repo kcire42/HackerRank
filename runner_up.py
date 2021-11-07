@@ -17,7 +17,7 @@ def ordanamiento(our_list):
    
     for i in range(len(our_list)):
         # We want the last pair of adjacent elements to be (n-2, n-1)
-        for j in range(len(our_list) - 1):
+        for j in range(len(our_list)-1):
             if our_list[j] < our_list[j+1]:
                 # Swap
                 
