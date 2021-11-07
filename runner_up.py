@@ -28,7 +28,7 @@ def ordanamiento(our_list):
         if not numero in lista_sin_repetidos:
             lista_sin_repetidos.append(numero)
     print(lista_sin_repetidos)
-    
+    return lista_sin_repetidos    
         
 
 
