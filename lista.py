@@ -3,6 +3,7 @@ def main():
     lista = []
     for instruccion in range(numero_instrucciones):
         instruccion_a_ejecutar = list(input().split())
+        #instruccion_a_ejecutar = input().strip().split("")
         cmd = instruccion_a_ejecutar[0]
 
         if cmd == "insert":
@@ -22,14 +23,13 @@ def main():
             objeto = int(instruccion_a_ejecutar[1])
             lista.append(objeto)
         elif cmd == "sort":
-            lista.sort
+            lista.sort()
         elif cmd == "pop":
             
-            lista.pop
+            lista.pop()
         elif cmd == "reverse":
             
-            lista.reverse
-        
+            lista.reverse()
 
 
 if __name__=='__main__':
