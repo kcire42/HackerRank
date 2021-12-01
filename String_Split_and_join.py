@@ -1,5 +1,9 @@
 def split_and_join(line):
-    line
+    lista = line.split(" ")
+    union = "-".join(lista)
+    return union
+
+
 
 if __name__ == '__main__':
     line = input()
