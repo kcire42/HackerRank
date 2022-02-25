@@ -1,4 +1,4 @@
-from collections import defaultdict
+
 # d = defaultdict(list)
 # list1=[]
 
@@ -29,7 +29,7 @@ def main():
     #print(lista)
     for k in lista:
         if k in d:
-            print (" ".join(map(str,d)))
+            print (" ".join(map(str,d[k])))
         else:
             print(-1)
         
