@@ -11,7 +11,7 @@ import sys
 
 def company_logo(company_name:str):
     company_name = sorted(company_name)
-    print(company_name)
+    
     count_letter = Counter(company_name).most_common(3)
     # list_of_data =  list(count_letter)
     # print(list_of_data)
